@@ -1,0 +1,98 @@
+
+body
+{
+    background-color: rgb(13, 13, 13);
+    /* height: 200vh; */
+}
+
+.slider .buttons img
+{
+    width: 50px;
+}
+.slider .content
+{
+    max-width: 50%;
+}
+a {
+    text-decoration: none;
+}
+.big
+{
+    font-size: 60px;
+}
+
+.btnn {
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 225, 225, 0.7);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.3s; 
+    border-radius: 10px;
+}
+
+.image-container:hover .overlay {
+    bottom: 0; 
+}
+
+.slider {
+    z-index: 999;
+}
+
+
+#loading {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 1); /* Dimmed background */
+    justify-content: center; 
+    align-items: center;
+    z-index: 9999; 
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 55px;
+    aspect-ratio: 1;
+    --g1:conic-gradient(from  90deg at top    3px left  3px,#0000 90deg,#fff 0);
+    --g2:conic-gradient(from -90deg at bottom 3px right 3px,#0000 90deg,#fff 0);
+    background:
+      var(--g1),var(--g1),var(--g1),var(--g1), 
+      var(--g2),var(--g2),var(--g2),var(--g2);
+    background-position: 0 0,100% 0,100% 100%,0 100%;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    animation: l11 3s infinite;
+  }
+  @keyframes l11 {
+    0%   {background-size:35px 15px,15px 15px,15px 35px,35px 35px}
+    25%  {background-size:35px 35px,15px 35px,15px 15px,35px 15px}
+    50%  {background-size:15px 35px,35px 35px,35px 15px,15px 15px}
+    75%  {background-size:15px 15px,35px 15px,35px 35px,15px 35px}
+    100% {background-size:35px 15px,15px 15px,15px 35px,35px 35px}
+  }

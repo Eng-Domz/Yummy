@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>yummy</title>
+        <link rel="icon"  type="image/png"  href="../imgs/logo.png">
+</head>
+
+<body>
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <div class="slider position-fixed top-0 bottom-0 bg-transparent d-flex">
+        <div class="content bg-black d-flex flex-column px-3  justify-content-between">
+            <div class="top d-flex flex-column">
+                <a href="../html files/search.html" class="my-3 text-white text-decoration-none">Search</a>
+                <a href="../html files/categories.html" class="my-3 text-white text-decoration-none">Category</a>
+                <a href="../html files/area.html" class="my-3 text-white text-decoration-none">Area</a>
+                <a href="../html files/ingredients.html" class="my-3 text-white text-decoration-none">Ingredients</a>
+                
+            </div>
+            <div class="bottom mb-2">
+                <div class="">
+                    <a class="fab text-white text-decoration-none fa-facebook"></a>
+                    <a class="fab text-white text-decoration-none fa-twitter"></a>
+                    <a class="fas text-white text-decoration-none fa-globe"></a>
+                </div>
+                <h6 class="text-white-50">Copyright Â© 2019 All Rights Reserved.</h6>
+            </div>
+
+        </div>
+        <div class="buttons bg-white d-flex flex-column align-items-center justify-content-between">
+            <a href="../index.html"><img src="../imgs/logo.png" alt="" class="mt-4"></a>
+            <button id="close" class="btn bg-transparent p-3"><i id="one" class="fas fs-3 fa-bars"></i><i id="two"
+                    class="fas fs-3 fa-x d-none"></i></button>
+            <div class="icons d-flex flex-column mb-2">
+                <i class="fas fs-5 my-1 fa-globe"></i>
+                <i class="fas fs-5 my-1 fa-share-nodes"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row py-5 g-4" id="rowData">
+            <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+                <div class="container w-75 text-center">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <input id="nameInput" type="text" class="form-control"
+                                placeholder="Enter Your Name">
+                            <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Special characters and numbers not allowed
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="emailInput" type="email" class="form-control "
+                                placeholder="Enter Your Email">
+                            <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Email not valid *exemple@yyy.zzz
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="phoneInput" type="text" class="form-control "
+                                placeholder="Enter Your Phone">
+                            <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid Phone Number
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="ageInput" type="number" class="form-control "
+                                placeholder="Enter Your Age">
+                            <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid age
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="passwordInput" type="password" class="form-control "
+                                placeholder="Enter Your Password">
+                            <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid password *Minimum eight characters, at least one letter and one number:*
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="repasswordInput" type="password"
+                                class="form-control " placeholder="Repassword">
+                            <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid repassword
+                            </div>
+                        </div>
+                    </div>
+                    <button id="submitBtn"  class="disabled btn btn-outline-danger px-2 mt-3">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js files/main.js"></script>
+        
+</body>
+
+</html>
