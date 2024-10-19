@@ -34,12 +34,12 @@ $("#close").on('click', function () {
 
 
 
-function putLoad() {
-    $(".loader").addClass("loader-active");
-}
-function removeLoad() {
-    $(".loader").removeClass("loader-active");
-}
+// function putLoad() {
+//     $(".loader").addClass("loader-active");
+// }
+// function removeLoad() {
+//     $(".loader").removeClass("loader-active");
+// }
 
 
 
@@ -131,7 +131,7 @@ async function putPic(dummy, x) {
             <div id="${data.meals[x].idMeal}" class="inner border-0 rounded-2">
                 <div class="image-container border-0 rounded-2">
                     <img src="${data.meals[x].strMealThumb}"  alt="Sushi" class="img-fluid">
-                   <a href="../html files/details.html" > <div class="overlay border-0 rounded-2">
+                   <a href="./html files/details.html" > <div class="overlay border-0 rounded-2">
                         <div class="info  fs-2">${data.meals[x].strMeal}</div>
                     </div></a>
                 </div>
